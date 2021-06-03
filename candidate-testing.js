@@ -9,7 +9,7 @@ console.log("Hello "+ candidateName + "!");
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 
-let question = input.question("Who was the first American woman in space? ");
+let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = question;
 let questions;
@@ -22,20 +22,19 @@ function askForName() {
 }
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-  
-}
+  candidateAnswer = input.question(question);
 
-if (correctAnswer === candidateAnswer) {
-  console.log("Your answer is correct.");
-} else {
-    console.log("Your answer is incorrect.");
 }
 
 
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-
+if (correctAnswer === candidateAnswer) {
+  console.log("Your answer is correct.");
+} else {
+    console.log("Your answer is incorrect.");
+}
 
  let grade;
   
